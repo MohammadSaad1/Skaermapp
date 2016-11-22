@@ -10,7 +10,7 @@ namespace App6.Viewmodel
    public class Viewmodel : INotifyPropertyChanged
     {
         
-        public AddskaermCommand Addskaermcommand { get; set; }
+    //    public AddskaermCommand Addskaermcommand { get; set; }
         public Model.skaermliste skaermliste { get; set; }
 
         /* public Viewmodel()
@@ -19,6 +19,8 @@ namespace App6.Viewmodel
 
          }
            */
+
+        public Command AddSkaermCommand { get; set; }
 
 
         private skaerme selectedSkaerm;
@@ -43,7 +45,7 @@ namespace App6.Viewmodel
         {
             skaermliste = new skaermliste();
             selectedSkaerm = new skaerme();
-            Addskaermcommand = new AddskaermCommand(Addskaerm);
+            AddSkaermCommand = new Command(Addskaerm);
             NewSkaerm = new skaerme();
           
 

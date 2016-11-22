@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace App6.Viewmodel
 {
-    class Command : ICommand
+  public  class Command : ICommand
     {
         private Action methodToExecute = null;
         private Func<bool>
